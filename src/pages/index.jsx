@@ -16,6 +16,7 @@ export default function Home() {
           name="description"
           content="Ayudamos a startups a comprender a sus clientes y desarrollar soluciones eficientes, soporte en el desarrollo y lanzamiento de nuevos productos"
         />
+        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
       </Head>
       <Header />
       <main>

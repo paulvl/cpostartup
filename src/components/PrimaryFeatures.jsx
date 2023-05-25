@@ -18,7 +18,7 @@ const features = [
   {
     title: 'CPO as a Service',
     description:
-      "Gestión estratégica y desarrollo, impulsamos la visión del producto estableciendo prioridades y definiendo una hoja de ruta supervisando su implementación. Abrazamos tu producto como si fuese nuestro ese es el mindset.",
+      "Gestión estratégica y desarrollo, impulsamos la visión del producto estableciendo prioridades y definiendo una hoja de ruta supervisando su implementación. Abrazamos tu producto como si fuese nuestro, ese es nuestro mindset.",
     icon: SparklesIcon,
   },
   {
@@ -90,7 +90,7 @@ export function PrimaryFeatures() {
                 <div className='mx-auto grid max-w-2xl lg:mx-0 lg:max-w-none lg:items-center lg:gap-y-0 mt-10 lg:border-t lg:border-white/10 lg:pt-10'>
                   <dl className="max-w-xl text-base leading-7 text-gray-300 lg:max-w-none grid grid-cols-1 lg:grid-cols-2 gap-x-8">
                     {features.map((feature) => (
-                      <div key={feature.name} className="relative mb-10">
+                      <div key={feature.title} className="relative mb-10">
                         <dt className="ml-9 inline-block font-semibold text-white">
                           <feature.icon className="absolute left-1 top-1 h-5 w-5 text-purple-100" aria-hidden="true" />
                           {feature.title}

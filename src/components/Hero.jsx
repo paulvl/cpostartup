@@ -1,12 +1,13 @@
-import Image from 'next/image'
-
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import logoConsulta from '@/images/logos/consulta.svg'
-import logoGenimagix from '@/images/logos/genimagix.svg'
-import logoVerificaId from '@/images/logos/verifica_id.svg'
+import Image from 'next/image';
+import { Button } from '@/components/Button';
+import { Container } from '@/components/Container';
+import logoConsulta from '@/images/logos/consulta.svg';
+import logoGenimagix from '@/images/logos/genimagix.svg';
+import logoVerificaId from '@/images/logos/verifica_id.svg';
+import { RandomSlogan } from '@/components/RandomSlogan';
 
 export function Hero() {
+  
   return (
     <Container className="pb-16 pt-20 text-center lg:pt-32">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
@@ -24,14 +25,12 @@ export function Hero() {
         </span>{' '}
         son lo más importante, deja el resto en nuestras manos. 
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Ayudamos a startups a comprender a sus clientes y desarrollar soluciones eficientes, soporte en el desarrollo y lanzamiento de nuevos productos.
-      </p>
+      <RandomSlogan></RandomSlogan>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="https://wa.link/dil69i" target="_blank">Quiero contactar</Button>
       </div>
       {/* esta parte se debe activar cuando tengamos clientes */}
-      <div className="mt-36 lg:mt-32">
+      <div className="mt-16 lg:mt-24">
         <p className="font-display text-base text-slate-900">
           Estas empresas han confiado en nosotros
         </p>

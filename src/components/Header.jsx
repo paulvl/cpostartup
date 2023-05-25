@@ -90,19 +90,18 @@ export function Header() {
   return (
     <header className="py-10">
       <Container>
-        <nav className="relative z-50 flex justify-between">
-          <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
+        <nav className="relative z-50 flex gap-4">
+          <div className="flex flex-1 items-center md:gap-x-12">
+            <Link href="#" aria-label="Home" className="shrink-0">
               <Logo className="h-16 w-auto" />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
+            <div className="hidden md:flex md:gap-x-6 md:flex-1 md:justify-end">
               <NavLink href="#que-podemos-hacer-por-ti">¿Qué pueden hacer por mi?</NavLink>
               <NavLink href="#servicios">Servicios</NavLink>
-              {/* <NavLink href="#pricing">Pricing</NavLink> */}
             </div>
           </div>
-          <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button href="https://wa.link/dil69i" target="_blank" color="purple">
+          <div className="flex shrink-0 items-center gap-x-5 md:gap-x-8">
+            <Button href="https://wa.link/dil69i" target="_blank" color="purple" className="max-lg:hidden">
               <span>
                 Contactar <span className="hidden lg:inline">ahora</span>
               </span>
