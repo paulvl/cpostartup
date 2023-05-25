@@ -1,12 +1,8 @@
 import { useId } from 'react'
-import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import developmentIllustration from '@/images/illustrations/development.jpg'
-import uxUiDesignIllustration from '@/images/illustrations/ux_ui_design.jpg'
-import infraestructureIllustration from '@/images/illustrations/infraestructure.jpg'
 
 const features = [
   {
@@ -14,7 +10,6 @@ const features = [
     summary: 'Producto digital.',
     description:
       'Implementamos metodologías ágiles para el desarrollo de productos, lo que permite una respuesta rápida a los cambios y una entrega continua de valor. Trabajamos en sprints y ciclos iterativos para maximizar la eficiencia y la calidad del producto.',
-    image: developmentIllustration,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -47,7 +42,6 @@ const features = [
       'UX/UI',
     description:
       'Diseñamos experiencias únicas e interfaces limpias para crear productos digitales atractivos y fáciles de usar. Nuestro enfoque: "comprender antes de hacer" nos permite crear interfaces intuitivas y experiencias fluidas.',
-    image: uxUiDesignIllustration,
     icon: function InventoryIcon() {
       return (
         <>
@@ -64,13 +58,62 @@ const features = [
       'Aprovisionamiento y Gestión',
     description:
       'Nos encargamos de la infraestructura tecnológica de aquellos que buscan una solución confiable y eficiente para administrar sus entornos de desarrollo y producción. Nuestro enfoque se centra en garantizar la disponibilidad, rendimiento y seguridad de los sistemas y redes empresariales.',
-    image: infraestructureIllustration,
     icon: function ContactsIcon() {
       return (
         <>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
             <path d="M5.507 4.048A3 3 0 017.785 3h8.43a3 3 0 012.278 1.048l1.722 2.008A4.533 4.533 0 0019.5 6h-15c-.243 0-.482.02-.715.056l1.722-2.008z" />
             <path fill-rule="evenodd" d="M1.5 10.5a3 3 0 013-3h15a3 3 0 110 6h-15a3 3 0 01-3-3zm15 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm2.25.75a.75.75 0 100-1.5.75.75 0 000 1.5zM4.5 15a3 3 0 100 6h15a3 3 0 100-6h-15zm11.25 3.75a.75.75 0 100-1.5.75.75 0 000 1.5zM19.5 18a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" clip-rule="evenodd" />
+          </svg>
+        </>
+      )
+    },
+  },
+  {
+    name: 'Implementación',
+    summary:
+      'No-Code',
+    description:
+      ' Implementamos soluciones tecnológicas sin necesidad de programación, automatizando procesos y creando aplicaciones personalizadas para acelerar el crecimiento de tu startup de manera rápida y eficiente. Sin barreras técnicas ni demoras, aprovecha al máximo las herramientas No-Code para impulsar la eficiencia operativa y liberar el potencial de tu negocio.',
+    icon: function ContactsIcon() {
+      return (
+        <>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h12a3 3 0 013 3v12a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm14.25 6a.75.75 0 01-.22.53l-2.25 2.25a.75.75 0 11-1.06-1.06L15.44 12l-1.72-1.72a.75.75 0 111.06-1.06l2.25 2.25c.141.14.22.331.22.53zm-10.28-.53a.75.75 0 000 1.06l2.25 2.25a.75.75 0 101.06-1.06L8.56 12l1.72-1.72a.75.75 0 10-1.06-1.06l-2.25 2.25z" clip-rule="evenodd" />
+          </svg>
+        </>
+      )
+    },
+  },
+  {
+    name: 'Validación',
+    summary:
+      'Ideas',
+    description:
+      'Te ayudaremos a evaluar la viabilidad y el potencial de tus ideas de negocio o producto. Utilizando metodologías probadas analizaremos tu concepto, identificaremos oportunidades y desafíos, brindandote información clave para respaldar tus decisiones estratégicas. Con nuestra experiencia en validación de ideas, te proporcionaremos datos y perspectivas valiosas para que tomes decisiones informadas y maximices tus posibilidades de éxito en el mercado.',
+    icon: function ContactsIcon() {
+      return (
+        <>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+            <path d="M12 .75a8.25 8.25 0 00-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 00.577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 01-.937-.171.75.75 0 11.374-1.453 5.261 5.261 0 002.626 0 .75.75 0 11.374 1.452 6.712 6.712 0 01-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 00.577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0012 .75z" />
+            <path fill-rule="evenodd" d="M9.013 19.9a.75.75 0 01.877-.597 11.319 11.319 0 004.22 0 .75.75 0 11.28 1.473 12.819 12.819 0 01-4.78 0 .75.75 0 01-.597-.876zM9.754 22.344a.75.75 0 01.824-.668 13.682 13.682 0 002.844 0 .75.75 0 11.156 1.492 15.156 15.156 0 01-3.156 0 .75.75 0 01-.668-.824z" clip-rule="evenodd" />
+          </svg>
+
+        </>
+      )
+    },
+  },
+  {
+    name: 'Asesoramiento',
+    summary:
+      'Mentoring',
+    description:
+      'Obtén orientación estratégica y apoyo personalizado de nuestros mentores expertos en negocios, producto y desarrollo. A través de sesiones individuales, te ayudaremos a superar desafíos, aprovechar oportunidades y desarrollar tus habilidades de liderazgo. Obtén una visión clara y confianza para alcanzar tus metas empresariales.',
+    icon: function ContactsIcon() {
+      return (
+        <>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
           </svg>
         </>
       )
@@ -116,16 +159,8 @@ function FeaturesMobile() {
       {features.map((feature) => (
         <div key={feature.name}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
-          <div className="relative mt-10 pb-10">
+          <div className="relative pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-              <Image
-                className="w-full"
-                src={feature.image}
-                alt=""
-                sizes="52.75rem"
-              />
-            </div>
           </div>
         </div>
       ))}
@@ -138,50 +173,24 @@ function FeaturesDesktop() {
     <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
       {({ selectedIndex }) => (
         <>
-          <Tab.List className="grid grid-cols-3 gap-x-8">
+          <div className="grid grid-cols-3 gap-x-8">
             {features.map((feature, featureIndex) => (
               <Feature
                 key={feature.name}
                 feature={{
                   ...feature,
                   name: (
-                    <Tab className="[&:not(:focus-visible)]:focus:outline-none">
+                    <div className="[&:not(:focus-visible)]:focus:outline-none">
                       <span className="absolute inset-0" />
                       {feature.name}
-                    </Tab>
+                    </div>
                   ),
                 }}
-                isActive={featureIndex === selectedIndex}
-                className="relative"
+                isActive={true}
+                className="relative mb-10"
               />
             ))}
-          </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
-            <div className="-mx-5 flex">
-              {features.map((feature, featureIndex) => (
-                <Tab.Panel
-                  static
-                  key={feature.name}
-                  className={clsx(
-                    'px-5 transition duration-500 ease-in-out [&:not(:focus-visible)]:focus:outline-none',
-                    featureIndex !== selectedIndex && 'opacity-60'
-                  )}
-                  style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
-                  aria-hidden={featureIndex !== selectedIndex}
-                >
-                  <div className="w-[45rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <Image
-                      className="w-full"
-                      src={feature.image}
-                      alt=""
-                      sizes="45rem"
-                    />
-                  </div>
-                </Tab.Panel>
-              ))}
-            </div>
-            <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
-          </Tab.Panels>
+          </div>
         </>
       )}
     </Tab.Group>

@@ -1,41 +1,43 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
 
-import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import illustrationCpoAsAService from '@/images/illustrations/cpo_as_a_service.jpg'
-import illustrationUserResearch from '@/images/illustrations/user_research.jpg'
-import illustrationDeploymentManagement from '@/images/illustrations/deployment_management.jpg'
-import illustrationProductLifecycleOptimization from '@/images/illustrations/product_lifecycle_optimization.jpg'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import illustrationIdeasWorking from '@/images/illustrations/ideas_working.svg'
+
+import {
+  SparklesIcon,
+  ArrowPathIcon,
+  CursorArrowRaysIcon,
+  ChevronRightIcon,
+  CloudArrowUpIcon,
+  LockClosedIcon,
+  ServerIcon,
+} from '@heroicons/react/20/solid'
 
 const features = [
   {
     title: 'CPO as a Service',
     description:
-      "Gestión estratégica y desarrollo, impulsamos la visión del producto estableciendo prioridades y definiendo una hoja de ruta supervisando su implementación.",
-    image: illustrationCpoAsAService,
+      "Gestión estratégica y desarrollo, impulsamos la visión del producto estableciendo prioridades y definiendo una hoja de ruta supervisando su implementación. Abrazamos tu producto como si fuese nuestro ese es el mindset.",
+    icon: SparklesIcon,
   },
   {
     title: 'User Research & Usabiliity Testing',
     description:
       "Realizamos investigación de usuarios y pruebas de usabilidad para comprender las necesidades y preferencias de los usuarios. Utilizaremos esta información para mejorar la usabilidad y la experiencia del producto, asegurando que se ajuste a las expectativas de los usuarios finales.",
-    image: illustrationUserResearch,
+    icon: CursorArrowRaysIcon,
   },
   {
     title: 'Deployment Management',
     description:
       "Ayudamos a planificar y ejecutar lanzamientos de productos exitosos. Colaboramos para coordinar el lanzamiento, realizar pruebas previas al lanzamiento, desarrollar estrategias de marketing y comunicación que garanticen una transición fluida hacia el mercado.",
-    image: illustrationDeploymentManagement,
+    icon: CloudArrowUpIcon,
   },
   {
     title: 'Product Lifecycle Optimization',
     description:
       'Nos enfocamos en maximizar el ciclo de vida del producto, brindando orientación sobre cómo evolucionarlo y mejorarlo continuamente para mantenerlo relevante en un mercado competitivo. Esto implica análisis de datos, retroalimentación de usuarios, monitoreo de métricas clave y adaptación a las demandas cambiantes del mercado.',
-    image: illustrationProductLifecycleOptimization,
+    icon: ArrowPathIcon,
   },
 ]
 
@@ -58,99 +60,49 @@ export function PrimaryFeatures() {
   }, [])
 
   return (
-    <section
-      id="que-podemos-hacer-por-ti"
-      aria-label="Features for running your books"
-      className="relative overflow-hidden bg-purple-600 pb-28 pt-20 sm:py-32"
-    >
-      <Image
-        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
-        alt=""
-        width={2245}
-        height={1636}
-        unoptimized
-      />
-      <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Todo lo que necesites para hacer funcionar tu negocio.
-          </h2>
-          <p className="mt-6 text-lg tracking-tight text-purple-100">
-            Nuestros equipos están listos ara comenzar a trabajar.
-          </p>
-        </div>
-        <Tab.Group
-          as="div"
-          className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
-          vertical={tabOrientation === 'vertical'}
-        >
-          {({ selectedIndex }) => (
-            <>
-              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
-                <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
-                  {features.map((feature, featureIndex) => (
-                    <div
-                      key={feature.title}
-                      className={clsx(
-                        'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
-                        selectedIndex === featureIndex
-                          ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
-                          : 'hover:bg-white/10 lg:hover:bg-white/5'
-                      )}
-                    >
-                      <h3>
-                        <Tab
-                          className={clsx(
-                            'font-display text-lg [&:not(:focus-visible)]:focus:outline-none',
-                            selectedIndex === featureIndex
-                              ? 'text-purple-600 lg:text-white'
-                              : 'text-purple-100 hover:text-white lg:text-white'
-                          )}
-                        >
-                          <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
-                          {feature.title}
-                        </Tab>
-                      </h3>
-                      <p
-                        className={clsx(
-                          'mt-2 hidden text-sm lg:block',
-                          selectedIndex === featureIndex
-                            ? 'text-white'
-                            : 'text-purple-100 group-hover:text-white'
-                        )}
-                      >
-                        {feature.description}
-                      </p>
-                    </div>
-                  ))}
-                </Tab.List>
+        <div id="que-podemos-hacer-por-ti" className="mx-auto max-w-7xl sm:px-6 lg:px-8 mt-8">
+            <div className="relative overflow-hidden bg-purple-600 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-16 xl:px-16">
+              <Image
+                className="absolute left-1/2 top-1/2 max-w-none "
+                src={backgroundImage}
+                alt=""
+                width={1216}
+                height={800}
+                unoptimized
+              />
+              <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
+                <div className="lg:row-start-2 lg:max-w-md">
+                  <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    Todo lo que necesites para hacer funcionar tu negocio.
+                  </h2>
+                  <p className="mt-6 text-lg leading-8 text-gray-300">
+                    Nuestros equipos están listos para comenzar a trabajar contigo.
+                  </p>
+                </div>
+                <Image
+                  src={illustrationIdeasWorking}
+                  alt="Product screenshot"
+                  className="relative z-20 lg:row-span-4 min-w-full max-w-xl lg:w-[16rem] lg:max-w-none"
+                ></Image>
               </div>
-              <Tab.Panels className="lg:col-span-7">
-                {features.map((feature) => (
-                  <Tab.Panel key={feature.title} unmount={false}>
-                    <div className="relative sm:px-6 lg:hidden">
-                      <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
-                      <p className="relative mx-auto max-w-2xl text-base text-white sm:text-center">
-                        {feature.description}
-                      </p>
-                    </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-purple-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
-                        className="w-full"
-                        src={feature.image}
-                        alt=""
-                        priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
-                    </div>
-                  </Tab.Panel>
-                ))}
-              </Tab.Panels>
-            </>
-          )}
-        </Tab.Group>
-      </Container>
-    </section>
+              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:items-center lg:gap-y-0">
+                {/* <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10"> */}
+                <div className='mx-auto grid max-w-2xl lg:mx-0 lg:max-w-none lg:items-center lg:gap-y-0 mt-10 lg:border-t lg:border-white/10 lg:pt-10'>
+                  <dl className="max-w-xl text-base leading-7 text-gray-300 lg:max-w-none grid grid-cols-1 lg:grid-cols-2 gap-x-8">
+                    {features.map((feature) => (
+                      <div key={feature.name} className="relative mb-10">
+                        <dt className="ml-9 inline-block font-semibold text-white">
+                          <feature.icon className="absolute left-1 top-1 h-5 w-5 text-purple-100" aria-hidden="true" />
+                          {feature.title}
+                        </dt>
+                        <br/>
+                        <dd className="inline">{feature.description}</dd>
+                      </div>
+                    ))}
+                  </dl>
+              </div>
+              </div>
+            </div>
+        </div>
   )
 }

@@ -2,12 +2,9 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
+import logoConsulta from '@/images/logos/consulta.svg'
+import logoGenimagix from '@/images/logos/genimagix.svg'
+import logoVerificaId from '@/images/logos/verifica_id.svg'
 
 export function Hero() {
   return (
@@ -34,9 +31,9 @@ export function Hero() {
         <Button href="https://wa.link/dil69i" target="_blank">Quiero contactar</Button>
       </div>
       {/* esta parte se debe activar cuando tengamos clientes */}
-      {/* <div className="mt-36 lg:mt-44">
+      <div className="mt-36 lg:mt-32">
         <p className="font-display text-base text-slate-900">
-          Trusted by these six companies so far
+          Estas empresas han confiado en nosotros
         </p>
         <ul
           role="list"
@@ -44,14 +41,9 @@ export function Hero() {
         >
           {[
             [
-              { name: 'Transistor', logo: logoTransistor },
-              { name: 'Tuple', logo: logoTuple },
-              { name: 'StaticKit', logo: logoStaticKit },
-            ],
-            [
-              { name: 'Mirage', logo: logoMirage },
-              { name: 'Laravel', logo: logoLaravel },
-              { name: 'Statamic', logo: logoStatamic },
+              { name: 'Consulta.pe', logo: logoConsulta },
+              { name: 'Genimagix', logo: logoGenimagix },
+              { name: 'Verifica.id', logo: logoVerificaId },
             ],
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
@@ -68,7 +60,7 @@ export function Hero() {
             </li>
           ))}
         </ul>
-      </div> */}
+      </div>
     </Container>
   )
 }
