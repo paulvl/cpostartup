@@ -22,16 +22,16 @@ const features = [
     icon: SparklesIcon,
   },
   {
-    title: 'User Research & Usabiliity Testing',
-    description:
-      "Realizamos investigación de usuarios y pruebas de usabilidad para comprender las necesidades y preferencias de los usuarios. Utilizaremos esta información para mejorar la usabilidad y la experiencia del producto, asegurando que se ajuste a las expectativas de los usuarios finales.",
-    icon: CursorArrowRaysIcon,
-  },
-  {
     title: 'Deployment Management',
     description:
       "Ayudamos a planificar y ejecutar lanzamientos de productos exitosos. Colaboramos para coordinar el lanzamiento, realizar pruebas previas al lanzamiento, desarrollar estrategias de marketing y comunicación que garanticen una transición fluida hacia el mercado.",
     icon: CloudArrowUpIcon,
+  },
+  {
+    title: 'User Research & Usabiliity Testing',
+    description:
+      "Realizamos investigación de usuarios y pruebas de usabilidad para comprender las necesidades y preferencias de los usuarios. Utilizaremos esta información para mejorar la usabilidad y la experiencia del producto, asegurando que se ajuste a las expectativas de los usuarios finales.",
+    icon: CursorArrowRaysIcon,
   },
   {
     title: 'Product Lifecycle Optimization',
@@ -70,8 +70,8 @@ export function PrimaryFeatures() {
                 height={800}
                 unoptimized
               />
-              <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
-                <div className="lg:row-start-2 lg:max-w-md">
+              <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-4 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
+                <div>
                   <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                     Todo lo que necesites para hacer funcionar tu negocio.
                   </h2>
@@ -82,11 +82,10 @@ export function PrimaryFeatures() {
                 <Image
                   src={illustrationIdeasWorking}
                   alt="Product screenshot"
-                  className="relative z-20 lg:row-span-4 min-w-full max-w-xl lg:w-[16rem] lg:max-w-none"
+                  className="relative z-20 w-full"
                 ></Image>
               </div>
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:items-center lg:gap-y-0">
-                {/* <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10"> */}
                 <div className='mx-auto grid max-w-2xl lg:mx-0 lg:max-w-none lg:items-center lg:gap-y-0 mt-10 lg:border-t lg:border-white/10 lg:pt-10'>
                   <dl className="max-w-xl text-base leading-7 text-gray-300 lg:max-w-none grid grid-cols-1 lg:grid-cols-2 gap-x-8">
                     {features.map((feature) => (
