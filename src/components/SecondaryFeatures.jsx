@@ -121,16 +121,17 @@ const features = [
   },
 ]
 
-function Feature({ feature, isActive, className, ...props }) {
+function Feature({ feature, className, ...props }) {
   return (
     <div
-      className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
+      className={clsx(className, 'text-center')}
       {...props}
     >
       <div
         className={clsx(
           'w-9 rounded-lg',
-          isActive ? 'bg-purple-600' : 'bg-slate-500'
+          'bg-purple-600',
+          'flex items-center justify-center mx-auto'
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -140,7 +141,7 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-purple-600' : 'text-slate-600'
+          'text-purple-600',
         )}
       >
         {feature.name}
@@ -158,7 +159,7 @@ function FeaturesMobile() {
     <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
       {features.map((feature) => (
         <div key={feature.name}>
-          <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
+          <Feature feature={feature} className="mx-auto max-w-2xl" />
           <div className="relative pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
           </div>
@@ -186,7 +187,6 @@ function FeaturesDesktop() {
                     </div>
                   ),
                 }}
-                isActive={true}
                 className="relative mb-10"
               />
             ))}
