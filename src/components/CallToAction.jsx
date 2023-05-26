@@ -26,7 +26,7 @@ export function CallToAction() {
           <p className="mt-4 text-lg tracking-tight text-white">
             Es momento de tomar el control de tu producto. Nuestro equipo de expertos esta listo para comenzar a trabajar.
           </p>
-          <Button href="https://wa.link/dil69i" target="_blank" color="white" className="mt-10">
+          <Button href="https://wa.link/gnalak" target="_blank" color="white" className="mt-10">
             Contactar
           </Button>
         </div>

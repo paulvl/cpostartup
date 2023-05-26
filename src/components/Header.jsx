@@ -101,7 +101,7 @@ export function Header() {
             </div>
           </div>
           <div className="flex shrink-0 items-center gap-x-5 md:gap-x-8">
-            <Button href="https://wa.link/dil69i" target="_blank" color="purple" className="max-lg:hidden">
+            <Button href="https://wa.link/gnalak" target="_blank" color="purple" className="max-lg:hidden">
               <span>
                 Contactar <span className="hidden lg:inline">ahora</span>
               </span>

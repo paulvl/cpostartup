@@ -27,7 +27,7 @@ export function Hero() {
       </h1>
       <RandomSlogan></RandomSlogan>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="https://wa.link/dil69i" target="_blank">Quiero contactar</Button>
+        <Button href="https://wa.link/gnalak" target="_blank">Quiero contactar</Button>
       </div>
       {/* esta parte se debe activar cuando tengamos clientes */}
       <div className="mt-16 lg:mt-24">
