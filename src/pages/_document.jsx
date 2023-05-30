@@ -1,7 +1,16 @@
 import { Head, Html, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 export default function Document(props) {
   let pageProps = props.__NEXT_DATA__?.props?.pageProps
+
+  const gaScript = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LN6X8PTK69');
+  `;
 
   return (
     <Html
@@ -9,6 +18,8 @@ export default function Document(props) {
       lang="en"
     >
       <Head>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-LN6X8PTK69`}></script>
+        <script dangerouslySetInnerHTML={{ __html: gaScript}}></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
