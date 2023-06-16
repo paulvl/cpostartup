@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import useTranslation from 'next-translate/useTranslation';
 
 import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
@@ -8,13 +9,15 @@ import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
 export default function Home() {
+  const { t, lang } = useTranslation('common')
+
   return (
     <>
       <Head>
-        <title>CPO Startup - Hacemos realidad tus productos</title>
+        <title>{t('meta_title')}</title>
         <meta
           name="description"
-          content="Ayudamos a startups a comprender a sus clientes y desarrollar soluciones eficientes, soporte en el desarrollo y lanzamiento de nuevos productos"
+          content={t('meta_description')}
         />
         <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
       </Head>

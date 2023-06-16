@@ -1,0 +1,61 @@
+{
+    "translate_to_flag": "US",
+    "header_cta_contact": "Contactar",
+    "header_cta_now": "ahora",
+    "header_services": "Servicios",
+    "header_what_we_can_do": "¿Qué pueden hacer por mi?",
+    
+    "hero_slogan_1": "Te ayudamos a liberar el backlog para avanzar sin obstáculos en el roadmap.",
+    "hero_slogan_2": "Rompe las barreras del backlog y avanza sin contratiempos en tu roadmap con nuestro respaldo.",
+    "hero_contact":"Quiero contactar",
+    "hero_trust": "Estas empresas han confiado en nosotros.",
+    "hero_your": "Tus",
+    "hero_goals": "objetivos",
+    "hero_leave_the_rest_in_our_hands": "son lo más importante, deja el resto en nuestras manos.",
+
+    "primary_features_title": "Todo lo que necesites para hacer funcionar tu negocio.",
+    "primary_features_subtitle": "Nuestros equipos están listos para comenzar a trabajar contigo.",
+    "primary_features_cpo": "Gestión estratégica y desarrollo, impulsamos la visión del producto estableciendo prioridades y definiendo una hoja de ruta supervisando su implementación. Abrazamos tu producto como si fuese nuestro, ese es nuestro mindset.",
+    "primary_features_deployment" : "Ayudamos a planificar y ejecutar lanzamientos de productos exitosos. Colaboramos para coordinar el lanzamiento, realizar pruebas previas al lanzamiento, desarrollar estrategias de marketing y comunicación que garanticen una transición fluida hacia el mercado.",
+    "primary_features_research": "Realizamos investigación de usuarios y pruebas de usabilidad para comprender las necesidades y preferencias de los usuarios. Utilizaremos esta información para mejorar la usabilidad y la experiencia del producto, asegurando que se ajuste a las expectativas de los usuarios finales.",
+    "primary_features_product_lifecycle": "Nos enfocamos en maximizar el ciclo de vida del producto, brindando orientación sobre cómo evolucionarlo y mejorarlo continuamente para mantenerlo relevante en un mercado competitivo. Esto implica análisis de datos, retroalimentación de usuarios, monitoreo de métricas clave y adaptación a las demandas cambiantes del mercado.",
+
+    "secondary_features_title": "Simplifica y potencia tu operación.",
+    "secondary_features_subtitle": "¿Te faltan manos? ¿Necesitas más capacidad? Somos más que expertos en tecnología, entendemos la velocidad a la que se mueve una startup, las muchas tareas pendientes con un equipo ocupado y la resiliencia necesaria para hacerlas todas.",
+    
+    "secondary_features_service_heading_development": "Desarrollo",
+    "secondary_features_service_title_development": "Producto digital",
+    "secondary_features_service_description_development": "Implementamos metodologías ágiles para el desarrollo de productos, lo que permite una respuesta rápida a los cambios y una entrega continua de valor. Trabajamos en sprints y ciclos iterativos para maximizar la eficiencia y la calidad del producto.",
+
+    "secondary_features_service_heading_design": "Diseño",
+    "secondary_features_service_title_design": "UX/UI",
+    "secondary_features_service_description_design": "Diseñamos experiencias únicas e interfaces limpias para crear productos digitales atractivos y fáciles de usar. Nuestro enfoque: 'comprender antes de hacer' nos permite crear interfaces intuitivas y experiencias fluidas.",
+    
+    "secondary_features_service_heading_infraestructure": "Infraestructura",
+    "secondary_features_service_title_infraestructure": "Aprovisinamiento y Gestión",
+    "secondary_features_service_description_infraestructure": "Nos encargamos de la infraestructura tecnológica de aquellos que buscan una solución confiable y eficiente para administrar sus entornos de desarrollo y producción. Nuestro enfoque se centra en garantizar la disponibilidad, rendimiento y seguridad de los sistemas y redes empresariales.",
+    
+    "secondary_features_service_heading_no_code": "Implmentación",
+    "secondary_features_service_title_no_code": "No-Code",
+    "secondary_features_service_description_no_code": "Implementamos soluciones tecnológicas sin necesidad de programación, automatizando procesos y creando aplicaciones personalizadas para acelerar el crecimiento de tu startup de manera rápida y eficiente. Sin barreras técnicas ni demoras, aprovecha al máximo las herramientas No-Code para impulsar la eficiencia operativa y liberar el potencial de tu negocio.",
+    
+    "secondary_features_service_heading_ideas": "Validación",
+    "secondary_features_service_title_ideas": "Ideas",
+    "secondary_features_service_description_ideas": "Te ayudaremos a evaluar la viabilidad y el potencial de tus ideas de negocio o producto. Utilizando metodologías probadas analizaremos tu concepto, identificaremos oportunidades y desafíos, brindandote información clave para respaldar tus decisiones estratégicas. Con nuestra experiencia en validación de ideas, te proporcionaremos datos y perspectivas valiosas para que tomes decisiones informadas y maximices tus posibilidades de éxito en el mercado.",
+    
+    "secondary_features_service_heading_mentoring": "Asesoramiento",
+    "secondary_features_service_title_mentoring": "Mentoring",
+    "secondary_features_service_description_mentoring": "Obtén orientación estratégica y apoyo personalizado de nuestros mentores expertos en negocios, producto y desarrollo. A través de sesiones individuales, te ayudaremos a superar desafíos, aprovechar oportunidades y desarrollar tus habilidades de liderazgo. Obtén una visión clara y confianza para alcanzar tus metas empresariales.",
+
+    "cta_title": "Comienza ahora mismo",
+    "cta_subtitle": "Es momento de tomar el control de tu producto. Nuestro equipo de expertos esta listo para comenzar a trabajar.",
+    "cta_button": "Contactar",
+
+    "copyright": "Todos los derechos reservados.",
+
+    "link_what_we_can_do": "que-podemos-hacer-por-ti",
+    "link_services": "servicios",
+
+    "meta_title": "CPO Startup - Hacemos realidad tus productos",
+    "meta_description": "Ayudamos a startups a comprender a sus clientes y desarrollar soluciones eficientes, soporte en el desarrollo y lanzamiento de nuevos productos"
+}

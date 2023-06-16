@@ -1,0 +1,61 @@
+{
+    "translate_to_flag": "ES",
+    "header_cta_contact": "Contact",
+    "header_cta_now": "now",
+    "header_services": "Services",
+    "header_what_we_can_do": "What we can do for you?",
+    
+    "hero_slogan_1": "We help you clear the backlog to move forward smoothly on the roadmap.",
+    "hero_slogan_2": "Break through the backlog barriers and move forward seamlessly on your roadmap with our support.",
+    "hero_contact":"Get in touch",
+    "hero_trust": "These companies have trusted us.",
+    "hero_your": "Your",
+    "hero_goals": "goals",
+    "hero_leave_the_rest_in_our_hands": "matter the most, leave out all the rest in our hands.",
+
+    "primary_features_title": "Everything you need to make your business run smoothly.",
+    "primary_features_subtitle": "Our teams are ready to start working with you.",
+    "primary_features_cpo": "Strategic management and development, we drive the product vision by establishing priorities and defining a roadmap while overseeing its implementation. We embrace your product as if it were our own, that's our mindset.",
+    "primary_features_deployment": "We help plan and execute successful product launches. We collaborate to coordinate the launch, conduct pre-launch testing, and develop marketing and communication strategies that ensure a smooth transition into the market.",
+    "primary_features_research": "We conduct user research and usability testing to understand the needs and preferences of users. We will use this information to enhance product usability and user experience, ensuring it aligns with the expectations of end users.",
+    "primary_features_product_lifecycle": "We focus on maximizing the product lifecycle by providing guidance on how to continuously evolve and improve it to keep it relevant in a competitive market. This involves data analysis, user feedback, monitoring key metrics, and adapting to changing market demands.",
+
+    "secondary_features_title": "Simplify and empower your operation.",
+    "secondary_features_subtitle": "Need an extra pair of hands? Require additional capacity? We are more than just technology experts, we understand the speed at which a startup moves, the numerous tasks with a busy team, and the resilience required to accomplish them all.",
+
+    "secondary_features_service_heading_development": "Development",
+    "secondary_features_service_title_development": "Digital Product",
+    "secondary_features_service_description_development": "We implement agile methodologies for product development, enabling a quick response to changes and continuous value delivery. We work in sprints and iterative cycles to maximize efficiency and product quality.",
+
+    "secondary_features_service_heading_design": "Design",
+    "secondary_features_service_title_design": "UX/UI",
+    "secondary_features_service_description_design": "We design unique experiences and clean interfaces to create attractive and user-friendly digital products. Our 'understand before making' approach allows us to create intuitive interfaces and seamless experiences.",
+
+    "secondary_features_service_heading_infraestructure": "Infrastructure",
+    "secondary_features_service_title_infraestructure": "Provisioning and Management",
+    "secondary_features_service_description_infraestructure": "We take care of the technological infrastructure for those seeking a reliable and efficient solution to manage their development and production environments. Our focus is on ensuring availability, performance, and security of enterprise systems and networks.",
+
+    "secondary_features_service_heading_no_code": "Implementation",
+    "secondary_features_service_title_no_code": "No-Code",
+    "secondary_features_service_description_no_code": "We implement technology solutions without the need for programming, automating processes and creating customized applications to accelerate the growth of your startup quickly and efficiently. With no technical barriers or delays, make the most of No-Code tools to drive operational efficiency and unleash your business potential.",
+
+    "secondary_features_service_heading_ideas": "Validation",
+    "secondary_features_service_title_ideas": "Ideas",
+    "secondary_features_service_description_ideas": "We will help you evaluate the viability and potential of your business or product ideas. Using proven methodologies, we will analyze your concept, identify opportunities and challenges, and provide key information to support your strategic decisions. With our expertise in idea validation, we will provide valuable data and insights to enable informed decision-making and maximize your chances of success in the market.",
+
+    "secondary_features_service_heading_mentoring": "Advisory",
+    "secondary_features_service_title_mentoring": "Mentoring",
+    "secondary_features_service_description_mentoring": "Gain strategic guidance and personalized support from our expert mentors in business, product, and development. Through individual sessions, we will help you overcome challenges, seize opportunities, and develop your leadership skills. Get a clear vision and confidence to achieve your business goals.",
+
+    "cta_title": "Get started right now",
+    "cta_subtitle": "It's time to take control of your product. Our team of experts is ready to start working.",
+    "cta_button": "Contact us",
+
+    "copyright": "All rights reserved.",
+
+    "link_what_we_can_do": "what-we-can-do-for-you",
+    "link_services": "services",
+
+    "meta_title": "CPO Startup - Bringing your products to life",
+    "meta_description": "We help startups understand their customers and develop efficient solutions, providing support in the development and launch of new products"    
+}

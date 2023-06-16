@@ -2,11 +2,16 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
+import useTranslation from 'next-translate/useTranslation'
+import getUnicodeFlagIcon from 'country-flag-icons/unicode'
+import setLanguage from 'next-translate/setLanguage'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
+
+
 
 function MobileNavLink({ href, children }) {
   return (
@@ -44,6 +49,8 @@ function MobileNavIcon({ open }) {
 }
 
 function MobileNavigation() {
+  const { t, lang } = useTranslation('common')
+  
   return (
     <Popover>
       <Popover.Button
@@ -75,10 +82,10 @@ function MobileNavigation() {
         >
           <Popover.Panel
             as="div"
-            className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
+            className="absolute inset-x-0 flex flex-col p-4 mt-4 text-lg tracking-tight origin-top bg-white shadow-xl top-full rounded-2xl text-slate-900 ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#que-podemos-hacer-por-ti">¿Qué pueden hacer por mi?</MobileNavLink>
-            <MobileNavLink href="#servicios">Servicios</MobileNavLink>
+            <MobileNavLink href={"#"+t('link_what_we_can_do')}>{t('header_what_we_can_do')}</MobileNavLink>
+            <MobileNavLink href={"#"+t('link_services')}>{t('header_services')}</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -87,23 +94,26 @@ function MobileNavigation() {
 }
 
 export function Header() {
+  const { t, lang } = useTranslation('common')
+  
   return (
     <header className="py-10">
       <Container>
         <nav className="relative z-50 flex gap-4">
-          <div className="flex flex-1 items-center md:gap-x-12">
+          <div className="flex items-center flex-1 md:gap-x-12">
             <Link href="#" aria-label="Home" className="shrink-0">
-              <Logo className="h-16 w-auto" />
+              <Logo className="w-auto h-16" />
             </Link>
             <div className="hidden md:flex md:gap-x-6 md:flex-1 md:justify-end">
-              <NavLink href="#que-podemos-hacer-por-ti">¿Qué pueden hacer por mi?</NavLink>
-              <NavLink href="#servicios">Servicios</NavLink>
+              <NavLink href={"#"+t('link_what_we_can_do')}>{t('header_what_we_can_do')}</NavLink>
+              <NavLink href={"#"+t('link_services')}>{t('header_services')}</NavLink>
             </div>
           </div>
-          <div className="flex shrink-0 items-center gap-x-5 md:gap-x-8">
+          <div className="flex items-center shrink-0 gap-x-5 md:gap-x-8">
+            <button onClick={async () => await setLanguage(lang == 'es' ? 'en' : 'es')}>{getUnicodeFlagIcon(t('translate_to_flag'))}</button>
             <Button href="https://wa.link/gnalak" target="_blank" color="purple" className="max-lg:hidden">
               <span>
-                Contactar <span className="hidden lg:inline">ahora</span>
+                {t('header_cta_contact')} <span className="hidden lg:inline">{t('header_cta_now')}</span>
               </span>
             </Button>
             <div className="-mr-1 md:hidden">
